@@ -10,7 +10,7 @@ node{
 
     stage("2.add data to the file") {
         echo "update some content to the file"
-        writeFile file:"scripted-folder/scrpt-file.txt", text:"we are writing scripted file"
+        writeFile file: "scripted-folder/scrpt-file.txt", text: "we are writing scripted file"
         echo "update some content to the file" >> test.txt
         sh "ls"
         sh "ls -alrts"
